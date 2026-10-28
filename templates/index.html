@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntra Code AI | Software Empresarial e Inteligencia Artificial</title>
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Syntra Code AI - Transformamos tu empresa con soluciones de software inteligentes y automatización con IA.">
+
+    <!-- Open Graph (Para WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Syntra Code AI | Software Empresarial e IA">
+    <meta property="og:description" content="Desarrollamos el futuro digital de tu negocio combinando software robusto y el poder de la Inteligencia Artificial.">
+    
+    <!-- 👇 AQUÍ PON TU LINK REAL DE CLOUDFLARE 👇 -->
+    <meta property="og:image" content="https://hostels-information-noble-asylum.trycloudflare.com/static/img/og-image.png">
+    <meta property="og:url" content="https://hostels-information-noble-asylum.trycloudflare.com">
+
+    <!-- Favicon (Usa tu propio logo) -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}">
+
+    <!-- Enlace a tu hoja de estilos -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+        <!-- Librería de Iconos Profesionales (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Librería de animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Efectos de fondo globales -->
+    <div class="aurora-bg"></div>
+    <div class="bg-grid"></div>
+
+    <!-- ==========================================
+         HEADER / NAVEGACIÓN
+         ========================================== -->
+        <header>
+        <div class="container nav-container">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Syntra Code AI Logo" class="logo">
+            
+            <!-- Botón de menú móvil (Hamburguesa) -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <nav id="main-nav">
+                <a href="#servicios">Soluciones</a>
+                <a href="#tecnologias">Tecnologías</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto" class="btn-primary">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION (SISTEMA SOLAR)
+         ========================================== -->
+        <!-- Hero Section -->
+    <section class="hero">
+        
+        <!-- NUEVO: Banner superior -->
+        <div class="hero-banner" data-aos="fade-down">
+            <img src="{{ url_for('static', filename='img/banner.png') }}" alt="Syntra Code AI Banner">
+        </div>
+
+        <!-- Textos principales -->
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <!-- ... resto de tu código ... -->
+
+        <!-- Textos principales -->
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="badge">🚀 El futuro de tu empresa, hoy</div>
+            <h1>Transformamos tu empresa con <span class="text-gradient">soluciones de software inteligentes</span> y automatización con IA.</h1>
+            <p>En Syntra Code AI desarrollamos el futuro digital de tu negocio, combinando arquitectura de software robusta con el poder de la Inteligencia Artificial.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Asesoría</a>
+                <a href="#servicios" class="btn-secondary">Ver Soluciones</a>
+            </div>
+        </div>
+
+        <!-- Sistema Solar Interactivo -->
+           <!-- Esfera Holográfica 3D -->
+        <div class="holo-sphere-wrapper">
+            <div class="holo-sphere">
+                
+                <!-- Núcleo Central (Logo Esférico) -->
+                <div class="holo-core" data-aos="zoom-in">
+                    <!-- Este div es el que crea el efecto de cristal -->
+                    <div class="sphere-glare"></div>
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Syntra Core">
+                </div>
+
+                <!-- Anillos de estrellas de fondo -->
+                <div class="holo-rings"></div>
+                <div class="holo-rings rings-2"></div>
+
+                <!-- Nodos (Menús) con Iconos Profesionales -->
+                <a href="#nosotros" class="holo-node node-1" title="Nosotros">
+                    <i class="fa-solid fa-brain node-icon"></i>
+                    <span class="node-text">Nosotros</span>
+                </a>
+
+                <a href="#tecnologias" class="holo-node node-2" title="Tecnologías">
+                    <i class="fa-solid fa-microchip node-icon"></i>
+                    <span class="node-text">Tecnologías</span>
+                </a>
+
+                <a href="#servicios" class="holo-node node-3" title="Soluciones">
+                    <i class="fa-solid fa-laptop-code node-icon"></i>
+                    <span class="node-text">Soluciones</span>
+                </a>
+                
+                <!-- Nodos extra decorativos (cambiamos los emojis por iconos) -->
+                <div class="holo-node node-4" style="pointer-events: none; opacity: 0.4;">
+                    <i class="fa-solid fa-star-of-life node-icon"></i>
+                </div>
+                <div class="holo-node node-5" style="pointer-events: none; opacity: 0.4;">
+                    <i class="fa-solid fa-atom node-icon"></i>
+                </div>
+
+            </div>
+        </div>
+
+            </div>
+        </div>
+
+    <!-- ==========================================
+         SECCIÓN: SERVICIOS (Bento Box)
+         ========================================== -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Nuestras Soluciones</h2>
+            <div class="bento-grid">
+                
+                <div class="bento-card large-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-content">
+                        <h3>Software Empresarial a Medida</h3>
+                        <p>Sistemas a medida, ERPs y CRMs diseñados para optimizar tus procesos internos, escalar tu operación y centralizar tu información.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="Software Empresarial">
+                </div>
+
+                                <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-content">
+                        <h3>Inteligencia Artificial</h3>
+                        <p>Modelos de IA para automatizar tareas, analizar datos predictivos y mejorar decisiones.</p>
+                        
+                        <!-- NUEVO: Cubo 3D Animado -->
+                        <div class="ia-3d-container">
+                            <div class="cube">
+                                <div class="face front"></div>
+                                <div class="face back"></div>
+                                <div class="face right"></div>
+                                <div class="face left"></div>
+                                <div class="face top"></div>
+                                <div class="face bottom"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-content">
+                        <h3>Automatización</h3>
+                        <p>Conectamos tus herramientas y creamos flujos de trabajo que ahorran tiempo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN: TECNOLOGÍAS
+         ========================================== -->
+    <section id="tecnologias" class="section bg-darker">
+        <div class="container text-center">
+            <h2 class="section-title" data-aos="fade-up">Construido con las mejores tecnologías</h2>
+            <div class="tech-stack" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN: SOBRE NOSOTROS
+         ========================================== -->
+    <section id="nosotros" class="section">
+        <div class="container about-content">
+            <h2 class="section-title" data-aos="fade-up">¿Por qué Syntra Code AI?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Somos una empresa emergente con una visión clara: democratizar el acceso a tecnología de alto nivel. No solo escribimos código, construimos soluciones estratégicas.</p>
+                        <ul class="features-list" data-aos="fade-up" data-aos-delay="200">
+                <li><i class="fa-solid fa-code"></i> Desarrollo Ágil y Escalable</li>
+                <li><i class="fa-solid fa-brain"></i> Modelos de IA Personalizados</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Seguridad de Nivel Empresarial</li>
+                <li><i class="fa-solid fa-headset"></i> Soporte y Mantenimiento Continuo</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN: CONTACTO
+         ========================================== -->
+    <section id="contacto" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Hablemos de tu Proyecto</h2>
+            <p class="text-center" data-aos="fade-up">Déjanos tus datos y un experto se pondrá en contacto contigo.</p>
+                        <!-- Formulario con IDs para JavaScript -->
+                        <form id="contact-form" class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="telefono" placeholder="Tu número de WhatsApp (opcional)" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-building"></i>
+                    <input type="text" id="empresa" placeholder="Empresa (opcional)">
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-message"></i>
+                    <textarea id="mensaje" placeholder="Cuéntanos sobre tu proyecto o necesidad..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Enviar Mensaje por WhatsApp
+                </button>
+            </form>
+
+            <!-- Iconos de redes sociales (Opcional) -->
+            <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Syntra Code AI. Todos los derechos reservados.</p>
+            <p>Software Empresarial & Inteligencia Artificial</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Inicializamos AOS
+        AOS.init({ once: true, offset: 100 });
+
+        // --- Lógica del Formulario a WhatsApp ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            
+            // CONFIGURACIÓN: Cambia este número por tu número de WhatsApp real.
+            // Formato internacional SIN el signo '+', ni guiones, ni espacios.
+            // Ejemplo para México (52) + 1234567890 -> "521234567890"
+            const WHATSAPP_NUMBER = "529612333010"; 
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault(); // Evitamos que la página se recargue
+
+                try {
+                    // 1. Capturamos los valores y limpiamos espacios (Clean Code)
+                    const nombre = document.getElementById('nombre').value.trim();
+                    const telefono = document.getElementById('telefono').value.trim();
+                    const empresa = document.getElementById('empresa').value.trim();
+                    const mensaje = document.getElementById('mensaje').value.trim();
+
+                    // 2. Validación básica (Manejo de errores)
+                    if (!nombre || !mensaje) {
+                        alert("Por favor, completa tu nombre y el mensaje.");
+                        return;
+                    }
+
+                    // 3. Construcción del mensaje formateado (Legibilidad)
+                    let texto = `¡Hola Syntra Code AI! 👋\n\n`;
+                    texto += `*Nombre:* ${nombre}\n`;
+                    if (empresa) texto += `*Empresa:* ${empresa}\n`;
+                    if (telefono) texto += `*Teléfono:* ${telefono}\n`;
+                    texto += `\n*Proyecto o necesidad:*\n${mensaje}`;
+
+                    // 4. Codificamos el texto para que sea seguro en una URL
+                    const textoCodificado = encodeURIComponent(texto);
+
+                    // 5. Generamos el enlace y abrimos WhatsApp
+                    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${textoCodificado}`;
+                    window.open(url, '_blank');
+
+                } catch (error) {
+                    console.error("Error al procesar el formulario: ", error);
+                    alert("Ocurrió un error inesperado. Por favor, intenta de nuevo.");
+                }
+            });
+        });
+    </script>
+        <script>
+        // Lógica del Menú Móvil
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mainNav = document.getElementById('main-nav');
+
+            menuBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                // Cambiamos el icono de hamburguesa a una X
+                menuBtn.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
+            });
+
+            // Cerrar el menú al hacer clic en un enlace
+            mainNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mainNav.classList.remove('active');
+                    menuBtn.textContent = '☰';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
