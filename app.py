@@ -73,4 +73,6 @@ def init_db():
         print("Base de datos creada.")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Usa el puerto de la variable de entorno PORT o el 5000 por defecto
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
