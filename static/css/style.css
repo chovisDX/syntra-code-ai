@@ -367,10 +367,29 @@ nav a:hover { color: var(--color-secundario); }
 /* =========================================
    10. TECNOLOGÍAS (Logos de herramientas)
    ========================================= */
-.tech-stack { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 50px; margin-top: 40px; }
-.tech-stack img { height: 60px; width: auto; filter: grayscale(100%) brightness(200%); opacity: 0.6; transition: all 0.3s ease; }
-.tech-stack img:hover { filter: grayscale(0%) brightness(100%); opacity: 1; transform: scale(1.1); }
+.tech-stack { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 50px; 
+    margin-top: 40px; 
+}
 
+/* Estilos para los iconos de Font Awesome */
+.tech-stack i { 
+    font-size: 3.5rem; /* Tamaño grande */
+    color: var(--texto-blanco); 
+    opacity: 0.6; 
+    transition: all 0.3s ease; 
+}
+
+.tech-stack i:hover { 
+    opacity: 1; 
+    transform: scale(1.1); 
+    color: var(--color-secundario); /* Se iluminan en cian al pasar el mouse */
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
+}
 /* =========================================
    11. NOSOTROS (Lista de características)
    ========================================= */
